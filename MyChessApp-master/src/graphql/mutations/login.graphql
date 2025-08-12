@@ -1,0 +1,10 @@
+mutation Login($token: String!) {
+  login(token: $token) {
+    errors {
+      ...ErrorFragment
+    }
+    user {
+      ...UserFragment
+    }
+  }
+}

@@ -1,0 +1,13 @@
+query History {
+  historyGames {
+    _id
+    isGameRunning
+    listOfPositions
+    white {
+      ...UserFragment
+    }
+    black {
+      ...UserFragment
+    }
+  }
+}
